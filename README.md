@@ -24,7 +24,7 @@ A Laravel 9 mini-project to manage Job Orders and generate Job Order Statements 
 ## 📦 Setup Instructions
 
 ```bash
-git clone https://github.com/your-username/jos-system.git
+git clone https://github.com/richa3708/jos-system
 cd jos-system
 cp .env.example .env
 composer install
