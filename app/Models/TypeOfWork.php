@@ -10,6 +10,12 @@ class TypeOfWork extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $fillable = [
+        'name',
+        'rate',
+        'code',
+    ];
+
     public function jobOrders()
     {
         return $this->hasMany(JobOrder::class);

@@ -10,6 +10,18 @@ class JobOrder extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $fillable = [
+        'name',
+        'date',
+        'jos_date',
+        'type_of_work_id',
+        'contractor_id',
+        'conductor_id',
+        'actual_work_completed',
+        'remarks',
+        'reference_number',
+    ];
+
     public function typeOfWork()
     {
         return $this->belongsTo(TypeOfWork::class);

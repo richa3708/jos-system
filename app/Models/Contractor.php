@@ -10,6 +10,15 @@ class Contractor extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $fillable = [
+        'name',
+        'code',
+        'email',
+        'phone_number',
+        'company_name',
+        'balance',
+    ];
+
     public function jobOrders()
     {
         return $this->hasMany(JobOrder::class);

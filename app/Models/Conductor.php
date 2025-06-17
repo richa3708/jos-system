@@ -10,6 +10,16 @@ class Conductor extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $fillable = [
+        'first_name',
+        'middle_name',
+        'last_name',
+        'staff_id',
+        'email',
+        'phone_number',
+        'department_name',
+    ];
+
     public function jobOrders()
     {
         return $this->hasMany(JobOrder::class);
